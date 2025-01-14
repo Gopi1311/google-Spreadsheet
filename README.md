@@ -15,7 +15,7 @@ git clone https://github.com/Gopi1311/google-Spreadsheet.git
 ~~~
 
 ~~~
-cd chatbot
+cd google-Spreadsheet
 ~~~
 
 #### 2.Install Dependencies: 
@@ -63,37 +63,50 @@ Support for bold, italics, font size adjustments, and cell coloring.
 Ability to add, delete, and resize rows and columns.
 #### 2. Mathematical Functions
 The application includes the following core mathematical functions:
-
-##### SUM: 
+##### 1.SUM: 
 Calculates the sum of a range of cells.
-##### AVERAGE: 
+##### 2.AVERAGE: 
 Calculates the average value of a range of cells.
-##### MAX:
+##### 3.MAX:
 Returns the maximum value from a range of cells.
-##### MIN: 
+##### 4.MIN: 
 Returns the minimum value from a range of cells.
-##### COUNT: 
+##### 5.COUNT: 
 Counts the number of numeric entries in a range of cells.
 
 #### 3. Data Quality Functions
   The following data quality functions are implemented:
-##### TRIM: 
+##### 1.TRIM: 
 Removes leading and trailing whitespace from a cell.
-##### UPPER: 
+##### 2.UPPER: 
 Converts the text in a cell to uppercase.
-##### LOWER: 
+##### 3.LOWER: 
 Converts the text in a cell to lowercase.
-##### REMOVE_DUPLICATES: 
+##### 4.REMOVE_DUPLICATES: 
 Eliminates duplicate rows from a selected range.
-##### FIND_AND_REPLACE: 
+##### 5.FIND_AND_REPLACE: 
 Finds and replaces specified text in a selected range of cells.
 
 #### 4. Data Entry and Validation
-##### Data Types:
+##### 1.Data Types:
 Supports input of numbers, text, and dates.
-##### Validation:
+##### 2.Validation:
 Implements basic checks to ensure numeric cells only contain numbers.
 
 #### 5. Testing and Results Display
 Provides an interactive interface for users to test the functions with their own data.
 Displays the results of function executions clearly in the spreadsheet.
+
+
+### Usage
+#### Spreadsheet Navigation:
+Click on cells to edit, format, or apply functions.
+#### 1.Formulas:
+Start with an = sign to enter formulas (e.g., =SUM(A1:A5)).
+#### 2.Formatting:
+Use the toolbar for bold, italics, font size, and color adjustments.
+#### 3.Data Validation:
+Ensure that inputs in numeric cells are numbers; error messages will display for invalid entries.
+#### 4.Testing Functions:
+Input test data and apply mathematical or data quality functions from the toolbar or formula bar.
+
