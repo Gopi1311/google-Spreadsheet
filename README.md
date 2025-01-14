@@ -62,7 +62,8 @@ Ability to add, delete, and resize rows and columns.
 The application includes the following core mathematical functions:
 ##### 1.SUM: 
 Calculates the sum of a range of cells.
-##### 2.AVERAGE: ####### Calculates the average value of a range of cells.
+##### 2.AVERAGE: 
+Calculates the average value of a range of cells.
 ##### 3.MAX:
 Returns the maximum value from a range of cells.
 ##### 4.MIN: 
