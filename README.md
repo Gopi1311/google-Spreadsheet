@@ -47,25 +47,22 @@ http://localhost:3000
 
 ### Features
 #### 1. Spreadsheet Interface
-##### Google Sheets-Like UI:
+##### 1.Google Sheets-Like UI:
 Mimics the design and layout of Google Sheets, including toolbar, formula bar, and grid structure.
-    
-##### Drag Functions:
-Implement drag-and-drop functionality for cell content, formulas, and selections to mirror Google Sheets.
-    
-##### Cell Dependencies:
-Updates formulas and values dynamically based on changes in related cells.
-    
-##### Basic Cell Formatting:
-Support for bold, italics, font size adjustments, and cell coloring.
-    
-##### Row and Column Management:
+##### 2.Drag Functions:
+Implement drag-and-drop functionality for cell content, formulas, and selections to mirror Google Sheets. 
+##### 3.Cell Dependencies:
+Updates formulas and values dynamically based on changes in related cells.   
+##### 4.Basic Cell Formatting:
+Support for bold, italics, font size adjustments, and cell coloring.  
+##### 5.Row and Column Management:
 Ability to add, delete, and resize rows and columns.
+
 #### 2. Mathematical Functions
 The application includes the following core mathematical functions:
 ##### 1.SUM: 
 Calculates the sum of a range of cells.
-##### **2.AVERAGE:** Calculates the average value of a range of cells.
+##### 2.AVERAGE: ####### Calculates the average value of a range of cells.
 ##### 3.MAX:
 Returns the maximum value from a range of cells.
 ##### 4.MIN: 
