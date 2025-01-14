@@ -1,0 +1,114 @@
+Basic styling for the spreadsheet
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+  background-color: #333; 
+  color: white;          
+  padding: 10px 20px;    
+  display: flex;        
+  justify-content: space-between; 
+  align-items: center;  
+}
+
+.navbar h1 {
+  margin: 0;          
+  font-size: 1.5rem;  
+}
+
+.toolbar {
+  display: flex;   
+  gap: 10px;            
+}
+
+.toolbar button {
+  margin: 0;            
+  padding: 8px 12px;   
+  background-color: rgba(0, 255, 191, 0.8);
+  border-radius: 5px;    
+  border: none;        
+  color: white;          
+  cursor: pointer;   
+  transition: background-color 0.3s;
+}
+
+.toolbar button:hover {
+  background-color: rgba(0, 200, 150, 0.9); 
+}
+
+.toolbar input[type="color"] {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 40px;
+  margin-left: 10px;
+}
+
+.toolbar label {
+  display: flex;
+  align-items: center; 
+  color: white;      
+}
+
+.toolbar label input {
+  margin-left: 8px;   
+}
+
+.controls {
+  margin: 20px;
+  text-align: center;
+}
+
+#spreadsheet-container {
+  overflow: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  padding: 5px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.cell[contenteditable="true"]:focus {
+  background-color: #f0f0f0;
+}
+
+
+.controls {
+  display: flex;             
+  align-items: center;        
+  gap: 10px;                 
+  padding: 10px;              
+  background-color: #f0f0f0; 
+  border-radius: 5px;        
+  margin-bottom: 10px;      
+}
+
+.controls input[type="text"] {
+  flex: 1;                    
+  padding: 8px;              
+  font-size: 16px;           
+  border: 1px solid #ccc;   
+  border-radius: 5px;        
+}
+
+.controls button {
+  padding: 8px 16px;          
+  font-size: 16px;           
+  color: white;              
+  background-color: #007bff; 
+  border: none;            
+  border-radius: 5px;        
+  cursor: pointer;          
+}
+
+.controls button:hover {
+  background-color: #0056b3;  
+}

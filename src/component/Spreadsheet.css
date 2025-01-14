@@ -1,0 +1,33 @@
+.spreadsheet {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+  }
+  
+  input {
+    width: 95%;
+    border: none;
+    text-align: center;
+  }
+  
+  input:focus {
+    outline: none;
+    background-color: #f0f0f0;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  

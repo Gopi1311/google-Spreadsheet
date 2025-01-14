@@ -1,0 +1,169 @@
+/* General layout and body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f3f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container that holds the entire application */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Toolbar styling */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.toolbar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toolbar button:hover {
+    background-color: #0056b3;
+}
+
+/* Formula Bar styling */
+.formula-bar {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.formula-bar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Grid layout for the spreadsheet */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1px;
+    background-color: #ddd;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.grid input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.grid input:focus {
+    outline: none;
+    background-color: #e9f4ff;
+    border-color: #007bff;
+}
+
+/* Grid cell hover effect */
+.grid input:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for individual cells that contain data */
+.grid input[data-type="numeric"] {
+    text-align: right;
+}
+
+.grid input[data-type="text"] {
+    text-align: left;
+}
+
+/* Button inside the formula bar for executing formulas */
+.formula-bar button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.formula-bar button:hover {
+    background-color: #218838;
+}
+
+/* Button for saving the spreadsheet */
+.save-button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #e0a800;
+}
+
+.save-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .grid input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .toolbar,
+    .formula-bar {
+        flex-direction: column;
+    }
+
+    .save-button {
+        font-size: 14px;
+    }
+}
